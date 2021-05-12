@@ -5,15 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROFILE PAGE</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width:780px)" href="/css/phone.css">
 </head>
 <body>
-    <nav>
-        <div id="bar">
-            <ul>
-                <li>HOME</li>
-                <li>CONTACT ME</li>
-            </ul>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="/images/logo-via-logohub1.png" alt="logo">
         </div>
+        <div id="bartext">
+            <ul>
+                   <li><a href="#writer">HOME</a></li>
+                   <li><a href="#contact">CONTACT ME</a></li>
+                   <li><a href="#card-section">PROJECTS</a></li>
+           </ul>
+        </div>   
     </nav>
+
+    <div id="writer">
+
+    </div>
+    
+    <div id="c2"></div>
+
+    <section id="card-section">
+        <div id="card">
+            <div class="box">
+                <div class="card-content">
+                    <h1>01</h1>   
+                    <h3>Project One</h3>
+                    <p>I made my first web page , nothing much special about it.</p>
+                    <a class="favshadow" href="#">Have a look</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card-content">
+                    <h1>02</h1>   
+                    <h3>Project Two</h3>
+                    <p>I made a standard food ordering site without backend</p>
+                    <a class="favshadow" href="#">Have a look</a>
+                </div>     
+            </div>
+            <div class="box">
+                <div class="card-content">
+                    <h1>03</h1>   
+                    <h3>Project Two</h3>
+                    <p>I made a Restraunt Site without backend part</p>
+                    <a class="favshadow" href="#">Have a look</a>
+                </div>     
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <form action="">
+
+        </form>
+    </section>
+
+    <section id="icon">
+        <i class="fas fa-tools fa-5x" id="faicon" ></i>
+    </section>
+    <div id="future">
+        <p>
+            The Site is Currenlt Under Construction.
+        </p>
+        <p>
+            Don't make grilled sandwich out of it.
+        </p>
+        <p>
+            I'll complete it soon.
+        </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b0549de33d.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+
+    //trigger only when screen big
+    let x = window.matchMedia("@media only screen and (min-width:780px)");
+    function fun(x)
+    {
+        if (x.matches) {
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1
+            });
+        }
+    }
+	x.addListener(fun);
+	//It also supports NodeList
+
+</script>
 </body>
 </html>
