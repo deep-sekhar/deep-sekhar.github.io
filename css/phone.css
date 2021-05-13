@@ -1,3 +1,4 @@
+/* bar section  */
 #bartext ul li a{
     font-size: 1.2rem;
 }
@@ -5,10 +6,42 @@
     top: 20%;
     left: 4%;
 }
+/* card section  */
 #card-section{
     margin-top: 90%;
 }
+/* icon section  */
 #faicon{
     color: white;
     margin-right: 50%;
+}
+/* card instruction */
+#instruction{
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 20px 3%;
+    white-space: nowrap;
+    color: white;
+}
+/* type writer  */
+.writer{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.writer #text{
+    display: inline-block;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    color: white;
+    white-space: nowrap;
+}
+.writer #cursor{
+    display: inline-block;
+	width: .1em;
+	height: 1em;
+	background-color: white;
+	animation: blink .75s step-end infinite;
 }

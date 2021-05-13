@@ -28,6 +28,7 @@ body::before{
     width: 100%;
     z-index: -1;
     clip-path: circle(30% at 95% 90%);
+    box-shadow: var(--favshadow);
     /* overflow: visible; */
 }
 body::after{
@@ -49,7 +50,6 @@ body::after{
 
 }
 
-}
 /* navbarsection  */
 #navbar{
     display: flex;
@@ -85,10 +85,51 @@ body::after{
     background-color: white;
     border-radius: 15px;
  }
+/* //////////////////////////////////// */
+/* writer section animation  */
+
+.writer{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 2.4rem;
+}
+.writer #text{
+    display: inline-block;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    color: white;
+    white-space: nowrap;
+}
+.writer #cursor{
+    display: inline-block;
+	width: .1em;
+	height: 1em;
+	background-color: white;
+	animation: blink .75s step-end infinite;
+}
+@keyframes blink{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
 
 /* cards section  */
 #card-section{
     margin-top: 30%;
+}
+#instruction{
+    width: 50%;
+    font-size: 3rem;
+    margin: 10px auto;
+    color: white;
 }
 #card{
     display: flex;
@@ -161,6 +202,7 @@ body::after{
     background-color: white;
     border-radius: 15px;
 }
+
 /* tool icon section for  future maintenance  */
 #icon{
     margin-top: 10%;  
