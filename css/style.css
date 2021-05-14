@@ -220,3 +220,20 @@ body::after{
     font-size: 1.2rem;
     margin: 25px;
 }
+/* footer section  */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.footlogo{
+    display: inline-block;
+    margin-left: 15px;
+}
+.footlogo a{
+    color: white;
+    text-decoration: none;
+}
