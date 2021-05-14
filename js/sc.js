@@ -28,8 +28,6 @@ function Type() {
 
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
-		// Hide the cursor
-		_CURSOR.style.display = 'none';
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
@@ -59,7 +57,6 @@ function Delete() {
 
 		// Start to display the next sentence after some time
 		setTimeout(function() {
-			_CURSOR.style.display = 'inline-block';
 			_INTERVAL_VAL = setInterval(Type, 100);
 		}, 200);
 	}
