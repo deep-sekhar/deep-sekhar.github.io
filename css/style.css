@@ -16,7 +16,7 @@ html{
 }
 body{
     /* background-color: rgb(3, 3, 58); */
-    background:linear-gradient(rgb(14, 16, 150),rgb(28, 31, 179) 70%,rgb(135, 29, 206)); 
+    background:linear-gradient(rgb(0, 1, 15),rgb(48, 49, 54) 70%,rgb(94, 93, 95)); 
 }
 body::before{
     content: "";
