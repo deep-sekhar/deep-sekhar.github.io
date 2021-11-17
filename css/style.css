@@ -41,19 +41,20 @@ body::after{
     z-index: -1;
     clip-path: circle(40% at 0% 30%);
 } */
-
+/* //////////////////////////////////// */
 /* utilities  */
 .favshadow{
     box-shadow: 1px 1px 1px rgb(0, 0, 0,0.5),
     -1px -1px 1px rgb(0, 0, 0,0.5),-1px 1px 1px  rgb(0, 0, 0,0.5),1px -1px 1px rgb(0, 0, 0,0.5);
 
 }
-
+/* //////////////////////////////////// */
 /* navbarsection  */
 #navbar{
     display: flex;
     flex-wrap: wrap;
     background-color: #D3E0F0;
+    width: 100vw;
 }
 .logo{
     margin: 10px;
@@ -127,11 +128,44 @@ body::after{
         background-color: transparent;
     }
 }
-
-
+/* //////////////////////////////////// */
+/* profile img  */
+#mypic{
+    display: block;
+    position: relative;
+    margin-top: 5vh;
+    height: 31vw;
+}
+#mypicin{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.pimg {
+    position: absolute;
+    top: 5.3vw;
+    overflow: hidden;
+    width: 27vw;
+    height: 22vw;
+    border-radius: 100px;
+    box-shadow: 0.8rem 0.8rem 2.4rem #c1d3ea, -0.8rem -0.8rem 2.4rem white, -0.2rem -0.2rem 0.2rem white;
+    border-top: 0.5px solid white;
+    border-left: 0.5px solid white;
+    
+}
+#mypic img{
+    position:absolute;
+    display: block;
+    top: 0;
+    width: 27vw;
+    height: 27vw;
+    margin: auto;
+    border-radius: 100px;
+}
+/* //////////////////////////////////// */
 /* cards section  */
 #card-section{
-    margin-top: 30%;
+    /* margin-top: 30%; */
 }
 #instruction{
     text-align: center;
@@ -224,7 +258,7 @@ body::after{
     color:rgb(0, 0, 0) ;
     /* background: linear-gradient(to left, #b6c2f7,#adc4f7, #d2b1f3 , #d3b4ec) ; */
 }
-
+/* //////////////////////////////////// */
 /* tool icon section for  future maintenance  */
 #icon{
     margin-top: 10%;  
@@ -242,7 +276,7 @@ body::after{
     font-size: 1.2rem;
     margin: 25px;
 }
-
+/* //////////////////////////////////// */
 /* footer section  */
 footer{
     background-color: black;
